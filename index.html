@@ -4,70 +4,110 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Bootstrap Travel Agency</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
-    <!--CONTENITORE-->
-    <div class="container text-center">
-
-      <!--PRIMA RIGA-->
-      <div class="row">
-        <div class="col my-4">
-          <h1>Our amazing tours</h1>
-          <h6 class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique qui et enim sed neque temporibus fugiat doloremque molestiae itaque, ut, iusto beatae nam. Placeat deleniti optio praesentium iste, cumque enim.</h6>
+    <header>
+      <!--BONUS NAVBAR-->
+      <nav class="navbar navbar-expand-lg bg-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">BoolandoInTravel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Travel Offers</a></li>
+                  <li><a class="dropdown-item" href="#">Top Destinations</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Flash Sales</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
+      </nav>
 
-      <!--SECONDA RIGA-->
-      <div class="row text-center">
-        <div class="col"> 
+    </header>
+    
 
-          <div class="card-group column-gap-3">
-            <!--PRIMA CARD-->
-            <div class="card border shadow">
-              <img class="img-fluid" src="https://picsum.photos/id/1061/300/300" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title bg-warning white">EXPLORE THE SEA</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <body>
+      <!--CONTENITORE-->
+      <div class="container text-center">
+
+        <!--PRIMA RIGA-->
+        <div class="row">
+          <div class="col my-4">
+            <h1>Our amazing tours</h1>
+            <h6 class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique qui et enim sed neque temporibus fugiat doloremque molestiae itaque, ut, iusto beatae nam. Placeat deleniti optio praesentium iste, cumque enim.</h6>
+          </div>
+        </div>
+
+        <!--SECONDA RIGA-->
+        <div class="row text-center">
+          <div class="col"> 
+
+            <div class="card-group column-gap-3">
+              <!--PRIMA CARD-->
+              <div class="card border shadow">
+                <img class="img-fluid" src="https://picsum.photos/id/1061/300/300" class="card-img-top" alt="...">
+                 <h5 class="card-title bg-warning white py-3">EXPLORE THE SEA</h5>
+                <div class="card-body"
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-white">
+                  <small class="text-warning">2days - 2 destination</small>
+                  <p><strong>350€</strong><span class="text-muted">/person</span></p>
+                </div>
               </div>
-              <div class="card-footer bg-white">
-                <small class="text-warning">2days - 2 destination</small>
-                <p><strong>350€</strong><span class="text-muted">/person</span></p>
+              <!--SECONDA CARD-->  
+              <div class="card border shadow">
+                <img class="img-fluid" src="https://picsum.photos/id/15/300/300" class="card-img-top" alt="...">
+                <h5 class="card-title bg-success white py-3">HIKE IN THE FOREST</h5>
+                <div class="card-body">
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer bg-white">
+                  <small class="text-success">2days - 2 destination</small>
+                  <p><strong>350€</strong><span class="text-muted">/person</span></p>
+                </div>
               </div>
-            </div>
-            <!--SECONDA CARD-->  
-            <div class="card border shadow">
-              <img class="img-fluid" src="https://picsum.photos/id/15/300/300" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title bg-success white">HIKE IN THE FOREST</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer bg-white">
-                <small class="text-success">2days - 2 destination</small>
-                <p><strong>350€</strong><span class="text-muted">/person</span></p>
-              </div>
-            </div>
-            <!--TERZA CARD-->
-            <div class="card border shadow">
-              <img class="img-fluid" src="https://picsum.photos/id/1036/300/300" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title bg-info white">CAMP IN THE SNOW</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer bg-white">
-                <small class="text-info">2days - 2 destination</small>
-                <p><strong>350€</strong><span class="text-muted">/person</span></p>
+              <!--TERZA CARD-->
+              <div class="card border shadow">
+                <img class="img-fluid" src="https://picsum.photos/id/1036/300/300" class="card-img-top" alt="...">
+                <h5 class="card-title bg-info white py-3">CAMP IN THE SNOW</h5>
+                <div class="card-body"
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer bg-white">
+                  <small class="text-info">2days - 2 destination</small>
+                  <p><strong>350€</strong><span class="text-muted">/person</span></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        </div>
       </div>
-      </div>
-    </div>
-
+    
 
    
 
